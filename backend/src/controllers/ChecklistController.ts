@@ -5,8 +5,8 @@ import { logger } from '../utils/logger';
 
 export class ChecklistController {
   constructor(
-    private ruleEngine: RuleEngine,
-    private applicationService: ApplicationService
+    private readonly ruleEngine: RuleEngine,
+    private readonly applicationService: ApplicationService
   ) {}
 
   async evaluateRules(req: Request, res: Response): Promise<void> {

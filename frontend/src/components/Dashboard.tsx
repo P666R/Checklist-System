@@ -32,7 +32,7 @@ export default function Dashboard() {
       <div className="results-grid">
         {results.map((result, index) => (
           <div
-            key={index}
+            key={index + 1}
             className={`result-card ${result.passed ? 'passed' : 'failed'}`}
           >
             <h3>{result.ruleName}</h3>
